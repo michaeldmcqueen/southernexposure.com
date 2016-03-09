@@ -1,0 +1,8 @@
+.DS_Store
+*.scssc
+.sass-cache
+error_log
+modules/contrib
+modules/developer
+themes
+libraries

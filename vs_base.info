@@ -1,0 +1,70 @@
+name = NBM Base Profile
+description = All of the stuff we use for all of the things
+version = 1.0
+core = 7.x
+
+;Core Modules
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = dblog
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = taxonomy
+
+;Contrib
+dependencies[] = actions_permissions
+dependencies[] = addressfield
+dependencies[] = admin_menu
+dependencies[] = adminimal_admin_menu
+dependencies[] = ckeditor
+dependencies[] = context
+dependencies[] = context_layouts
+dependencies[] = context_ui
+dependencies[] = ctools
+dependencies[] = date
+dependencies[] = date_api
+dependencies[] = date_popup
+dependencies[] = date_tools
+dependencies[] = date_views
+dependencies[] = diff
+dependencies[] = ds
+dependencies[] = ds_extras
+dependencies[] = ds_format
+dependencies[] = ds_forms
+dependencies[] = ds_search
+dependencies[] = ds_ui
+dependencies[] = email
+dependencies[] = entity
+dependencies[] = entity_token
+dependencies[] = entityreference
+dependencies[] = features
+dependencies[] = features_override
+dependencies[] = field_group
+dependencies[] = google_admanager
+dependencies[] = honeypot
+dependencies[] = libraries
+dependencies[] = link
+dependencies[] = logintoboggan
+dependencies[] = logintoboggan_rules
+dependencies[] = module_filter
+dependencies[] = pathauto
+dependencies[] = redirect
+dependencies[] = rules
+dependencies[] = rules_admin
+dependencies[] = rules_scheduler
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = views
+dependencies[] = views_bulk_operations
+dependencies[] = views_ui
+dependencies[] = webform
+
+;Features
+dependencies[] = base_config
