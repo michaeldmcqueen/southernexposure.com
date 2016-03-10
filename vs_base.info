@@ -89,9 +89,28 @@ dependencies[] = weight
 dependencies[] = xmlsitemap
 
 ;Features
-dependencies[] = blocks
-dependencies[] = content-types
-dependencies[] = defaults
-dependencies[] = menus
-dependencies[] = taxonomy
-dependencies[] = views
+
+dependencies[] = admin_defaults
+dependencies[] = chosen_defaults
+dependencies[] = context_defaults
+dependencies[] = drupal_default
+dependencies[] = ds_defaults
+dependencies[] = editor_defaults
+dependencies[] = feature_defaults
+dependencies[] = field_collection_defaults
+dependencies[] = files_defaults
+dependencies[] = image_style_defaults
+dependencies[] = media_defaults
+dependencies[] = menu_defaults
+dependencies[] = metatag_defaults
+dependencies[] = performance_defaults
+dependencies[] = role_defaults
+dependencies[] = rules_defaults
+dependencies[] = search_defaults
+dependencies[] = shared_fields
+dependencies[] = static_page_content_type
+dependencies[] = taxonomy_defaults
+dependencies[] = theme_defaults
+dependencies[] = url_and_path_defaults
+dependencies[] = views_defaults
+dependencies[] = xml_sitemap_defaults
