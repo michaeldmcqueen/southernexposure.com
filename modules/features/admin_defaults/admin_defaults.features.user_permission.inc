@@ -101,15 +101,15 @@ function admin_defaults_user_default_permissions() {
   );
 
   // Exported permission: 'assign node weight'.
-  $permissions['assign node weight'] = array(
-    'name' => 'assign node weight',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'content editor' => 'content editor',
-      'manager' => 'manager',
-    ),
-    'module' => 'weight',
-  );
+  // $permissions['assign node weight'] = array(
+  //   'name' => 'assign node weight',
+  //   'roles' => array(
+  //     'administrator' => 'administrator',
+  //     'content editor' => 'content editor',
+  //     'manager' => 'manager',
+  //   ),
+  //   'module' => 'weight',
+  // );
 
   // Exported permission: 'bypass node access'.
   $permissions['bypass node access'] = array(
