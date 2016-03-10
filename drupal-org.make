@@ -77,11 +77,11 @@ projects[xmlsitemap][version] = "2.2"
 
 
 ; Libraries
-libraries[colorbox][type] = "libraries"
+libraries[ckeditor][type] = "libraries"
 libraries[ckeditor][download][type] = get
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.3.4/ckeditor_4.3.4_full.zip"
 libraries[ckeditor][directory_name] = "ckeditor"
-libraries[colorbox][destination] = "libraries"
+libraries[ckeditor][destination] = "libraries"
 
 libraries[colorbox][type] = "libraries"
 libraries[colorbox][download][type] = "file"
