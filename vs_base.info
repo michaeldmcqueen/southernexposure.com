@@ -1,5 +1,5 @@
-name = NBM Base Profile
-description = All of the stuff we use for all of the things
+name = VS Base Profile
+description = Initial base for VS D7 projects
 version = 1.0
 core = 7.x
 
@@ -41,7 +41,7 @@ dependencies[] = entity
 dependencies[] = entity_view_mode
 dependencies[] = entityreference
 dependencies[] = features
-;dependencies[] = features_extra
+dependencies[] = features_extra
 dependencies[] = fences
 dependencies[] = field_collection
 dependencies[] = field_group
@@ -49,7 +49,7 @@ dependencies[] = file_entity
 dependencies[] = filefield_paths
 dependencies[] = filter_perms
 dependencies[] = globalredirect
-;dependencies[] = google_analytics
+dependencies[] = google_analytics
 dependencies[] = honeypot
 dependencies[] = html5_tools
 dependencies[] = ie6update
