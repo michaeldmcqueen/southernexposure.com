@@ -2,13 +2,8 @@
 core = 7.x
 api = 2
 
-
 ; Defaults
 defaults[projects][subdir] = "contrib"
-
-; Core
-projects[drupal][type] = core
-projects[drupal][version] = 7.43
 
 ; Contrib Modules
 projects[admin_menu][version] = "3.0-rc5"
