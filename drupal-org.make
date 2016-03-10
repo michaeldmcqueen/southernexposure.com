@@ -97,4 +97,5 @@ libraries[chosen][destination] = "libraries"
 
 ; Themes
 projects[shiny][version] = "1.7"
+projects[aurora][version] = "3.6"
 
