@@ -11,7 +11,7 @@ projects[drupal][type] = core
 projects[drupal][version] = 7.43
 
 ; Contrib Modules
-projects[admin_menu][version] = "admin_menu"
+projects[admin_menu][version] = "3.0-rc5"
 projects[advagg][version] = "2.17"
 projects[advanced_help][version] = "1.3"
 projects[auto_nodetitle][version] = "1.0"
