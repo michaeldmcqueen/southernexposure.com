@@ -1,0 +1,14 @@
+name = Staff Department Taxonomy
+core = 7.x
+package = Taxonomy
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = strongarm
+dependencies[] = taxonomy
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[taxonomy][] = staff_department
+features[user_permission][] = delete terms in staff_department
+features[user_permission][] = edit terms in staff_department
+project path = sites/all/modules/features/taxonomy

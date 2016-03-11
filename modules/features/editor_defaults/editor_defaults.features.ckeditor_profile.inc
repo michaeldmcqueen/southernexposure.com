@@ -77,14 +77,11 @@ function editor_defaults_ckeditor_profile_defaults() {
     'CKEditor Global Profile' => array(
       'name' => 'CKEditor Global Profile',
       'settings' => array(
-        'skin' => 'moono',
-        'ckeditor_path' => '%l/ckeditor',
-        'ckeditor_local_path' => '',
+        'ckeditor_path' => '/profiles/vs_base/libraries/ckeditor',
+        'ckeditor_local_path' => 'profiles/vs_base/libraries/ckeditor',
         'ckeditor_plugins_path' => '%m/plugins',
         'ckeditor_plugins_local_path' => '',
         'ckfinder_path' => '%m/ckfinder',
-        'ckfinder_local_path' => '',
-        'ckeditor_aggregate' => 'f',
         'toolbar_wizard' => 't',
         'loadPlugins' => array(),
       ),
