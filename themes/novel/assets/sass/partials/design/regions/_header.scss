@@ -2,6 +2,7 @@ header.site-header {
   @include clearfix;
     position: relative;
     z-index: 2;
+    padding: 3em 0;
 }
 .logo {
   @include breakpoint($tablet, $no-query: '.no-mq') {

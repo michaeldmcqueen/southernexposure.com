@@ -32,6 +32,12 @@ function context_defaults_context_default_contexts() {
           'region' => 'main_nav',
           'weight' => '-10',
         ),
+        'delta_blocks-messages' => array(
+          'module' => 'delta_blocks',
+          'delta' => 'messages',
+          'region' => 'help',
+          'weight' => '-10',
+        ),
         'system-main' => array(
           'module' => 'system',
           'delta' => 'main',
@@ -48,6 +54,64 @@ function context_defaults_context_default_contexts() {
   t('Used everywhere for every user');
   t('global');
   $export['global'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'global_admin';
+  $context->description = 'User Tabs and such';
+  $context->tag = 'global';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        '~admin' => '~admin',
+        '~admin/*' => '~admin/*',
+        '~batch' => '~batch',
+        '~node/add*' => '~node/add*',
+        '~node/*/*' => '~node/*/*',
+        '~file*' => '~file*',
+        '~user/*/*' => '~user/*/*',
+        '~taxonomy*' => '~taxonomy*',
+      ),
+    ),
+    'sitewide' => array(
+      'values' => array(
+        1 => 1,
+      ),
+    ),
+    'user' => array(
+      'values' => array(
+        'administrator' => 'administrator',
+        'content editor' => 'content editor',
+        'manager' => 'manager',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'delta_blocks-tabs' => array(
+          'module' => 'delta_blocks',
+          'delta' => 'tabs',
+          'region' => 'help',
+          'weight' => '-10',
+        ),
+        'system-help' => array(
+          'module' => 'system',
+          'delta' => 'help',
+          'region' => 'help',
+          'weight' => '-9',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('User Tabs and such');
+  t('global');
+  $export['global_admin'] = $context;
 
   return $export;
 }

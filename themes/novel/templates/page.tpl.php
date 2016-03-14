@@ -59,9 +59,10 @@
 </main>
 
 <footer>
-  <?php if ($page['footer']): ?>
     <div class="wrap">
       <?php print render($page['footer']); ?>
+      <div class="col col-3rd">
+        <p>© Copyright 2004 - 2016.  Southern Exposure Landscape & Sprinkler LLC</p>
+      </div>
     </div>
-  <?php endif; ?>
 </footer>

@@ -1,6 +1,10 @@
-main {
+main#content {
   @include clearfix;
-  padding: 2em 0 3em;
+  .wrap {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.21);
+    padding: 2em 2em 3em;
+  }
 }
 
 main.no-preface  {
