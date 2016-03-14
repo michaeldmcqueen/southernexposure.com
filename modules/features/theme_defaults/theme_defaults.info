@@ -13,4 +13,4 @@ features[user_permission][] = view the administration theme
 features[variable][] = admin_theme
 features[variable][] = node_admin_theme
 features[variable][] = theme_default
-project path = sites/all/modules/features/defaults
+project path = profiles/vs_base/modules/features
