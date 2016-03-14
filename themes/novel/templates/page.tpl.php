@@ -2,11 +2,12 @@
   
   <div class="wrap">
     <!-- Logo -->
-    <div class="logo">
+    <picture class="logo">
       <a href="/" title="Home">
-        <img src="/sites/all/themes/novel/assets/images/logos/logo.png" alt="Put the site name here">
+        <source type="image/svg+xml" srcset="/profiles/vs_base/themes/novel/assets/images/logos/logo.svg">
+        <img src="/profiles/vs_base/themes/novel/assets/images/logos/logo.png" alt="Southern Exposure Landscaping">
       </a>
-    </div>
+    </picture>
 
     <!-- Main Navigation -->
     <?php if ($page['main_nav']): ?>

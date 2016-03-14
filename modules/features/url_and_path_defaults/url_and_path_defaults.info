@@ -69,4 +69,5 @@ features[variable][] = pathauto_transliterate
 features[variable][] = pathauto_update_action
 features[variable][] = pathauto_user_pattern
 features[variable][] = pathauto_verbose
-project path = sites/all/modules/features/defaults
+features[variable][] = site_frontpage
+project path = profiles/vs_base/modules/features
