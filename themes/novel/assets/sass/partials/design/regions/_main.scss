@@ -1,0 +1,13 @@
+main {
+  @include clearfix;
+  padding: 2em 0 3em;
+}
+
+main.no-preface  {
+  .wrap {
+    margin-top: -17em;
+    position: relative;
+    z-index: 3;
+  }
+}
+
