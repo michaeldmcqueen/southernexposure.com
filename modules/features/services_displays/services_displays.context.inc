@@ -1,37 +1,39 @@
 <?php
 /**
  * @file
- * front.context.inc
+ * services_displays.context.inc
  */
 
 /**
  * Implements hook_context_default_contexts().
  */
-function front_context_default_contexts() {
+function services_displays_context_default_contexts() {
   $export = array();
 
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
-  $context->name = 'front';
-  $context->description = 'Home Page Blocks';
-  $context->tag = 'front';
+  $context->name = 'services';
+  $context->description = '';
+  $context->tag = 'Services';
   $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'service' => 'service',
+      ),
+      'options' => array(
+        'node_form' => '0',
+      ),
+    ),
     'path' => array(
       'values' => array(
-        '<front>' => '<front>',
+        'services' => 'services',
       ),
     ),
   );
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-case_studies-block_1' => array(
-          'module' => 'views',
-          'delta' => 'case_studies-block_1',
-          'region' => 'content',
-          'weight' => '0',
-        ),
         'views-services-block' => array(
           'module' => 'views',
           'delta' => 'services-block',
@@ -45,9 +47,8 @@ function front_context_default_contexts() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Home Page Blocks');
-  t('front');
-  $export['front'] = $context;
+  t('Services');
+  $export['services'] = $context;
 
   return $export;
 }
