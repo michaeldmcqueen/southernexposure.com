@@ -22,7 +22,7 @@ function portfolio_content_type_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -63,14 +63,20 @@ function portfolio_content_type_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'image',
+        'label' => 'hidden',
+        'module' => 'colorbox',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'colorbox_caption' => 'auto',
+          'colorbox_caption_custom' => '',
+          'colorbox_gallery' => 'post',
+          'colorbox_gallery_custom' => '',
+          'colorbox_image_style' => 'full_width',
+          'colorbox_multivalue_index' => NULL,
+          'colorbox_node_style' => 'square_thumbnail',
+          'colorbox_node_style_first' => 'full_width',
         ),
-        'type' => 'image',
-        'weight' => 1,
+        'type' => 'colorbox',
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
