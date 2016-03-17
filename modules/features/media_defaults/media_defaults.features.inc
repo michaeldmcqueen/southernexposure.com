@@ -26,10 +26,10 @@ function media_defaults_image_default_styles() {
   $styles['full_width'] = array(
     'label' => 'Full Width',
     'effects' => array(
-      9 => array(
+      2 => array(
         'name' => 'image_scale',
         'data' => array(
-          'width' => 940,
+          'width' => 1200,
           'height' => '',
           'upscale' => 0,
         ),

@@ -14,16 +14,29 @@
     font-style: italic;
   }
   .gallery {
+    margin-bottom: 2em;
     a.colorbox {
       display: inline-block;
       padding: .5em 1em .5em 0;
+      width: 50%;
+      @include breakpoint($tablet, $no-query: '.no-mq') {
+        width: 33%;
+      }
+      @include breakpoint($desktop) {
+        width: 25%;
+      }
+      @include breakpoint($lg-desktop) {
+        width: 20%;
+      }
       &:first-child {
         padding: 0 0 1em;
         display: block;
+        width: 100%;
       }
     }
     img {
       @include img-border;
+      width: 100%;
     }
   }
 }

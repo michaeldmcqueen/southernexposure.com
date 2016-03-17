@@ -1,0 +1,12 @@
+name = front
+description = Home Page Stuff
+core = 7.x
+package = Displays and Views
+version = 7.x-1.0
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = views
+features[context][] = front
+features[ctools][] = context:context:3
+features[features_api][] = api:2
+project path = profiles/vs_base/modules/features
