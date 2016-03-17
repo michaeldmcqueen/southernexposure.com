@@ -39,9 +39,11 @@
       </aside>
     <?php endif; ?>
     
+    <div class="main-content-wrap">
     <?php if ($page['content']): ?>
         <?php print render($page['content']); ?>
     <?php endif; ?>
+    </div>
 
     <?php if ($page['sidebar_second']): ?>
       <aside class="sidebar-second" role="complementary">

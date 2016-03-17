@@ -1,0 +1,30 @@
+// Case Study Teaders
+.case-studies-list-view {
+  .node-case-study.node-teaser {
+    @include clearfix;
+    padding-bottom: 1em;
+    .section-one {
+      @include breakpoint($tablet, $no-query: '.no-mq') {
+        float: left;
+        width: 30%;
+        margin-right: 2em;
+      }
+      img {
+        @include img-border;
+      }
+    }
+    .section-two {
+      overflow: hidden;
+      h3 {
+        @include breakpoint($tablet, $no-query: '.no-mq') {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  .case-study-teaser-testimonial {
+    font-style: italic;
+    margin-bottom: 1em;
+  }
+}
+

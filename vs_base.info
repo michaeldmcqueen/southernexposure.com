@@ -28,6 +28,7 @@ dependencies[] = blockify
 dependencies[] = breakpoints
 dependencies[] = chosen
 dependencies[] = ckeditor
+dependencies[] = colorbox
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = date

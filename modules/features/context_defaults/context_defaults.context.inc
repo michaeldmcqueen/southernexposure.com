@@ -44,6 +44,12 @@ function context_defaults_context_default_contexts() {
           'region' => 'content',
           'weight' => '-9',
         ),
+        'system-powered-by' => array(
+          'module' => 'system',
+          'delta' => 'powered-by',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
       ),
     ),
   );
