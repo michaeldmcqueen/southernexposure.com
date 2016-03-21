@@ -5,12 +5,13 @@ nav {
   text-align: right;
   @include breakpoint($tablet, $no-query: '.no-mq') {
     font-size: 110%;  
+    margin-top: 35px;
   }
   ul.menu {
     margin: 1em 0 0;
     padding: 0;
     position: relative;
-    @include breakpoint($tablet, $no-query: '.no-mq') {
+    @include breakpoint($desktop, $no-query: '.no-mq') {
       text-align: right;
       margin: 0;
       ul {
@@ -54,10 +55,10 @@ nav {
   }
   li.leaf, li, li.expanded {
     list-style: none;
-    padding: .5em .25em;
+    padding: 1.5em 1.25em;
     margin: 0;
     position: relative;
-    @include breakpoint($tablet, $no-query: '.no-mq') {
+    @include breakpoint($desktop, $no-query: '.no-mq') {
       padding: .5em .4em;
       font-size: 90%;
     }
@@ -65,8 +66,8 @@ nav {
       padding: .5em .75em;
       font-size: 100%;
     }
-    @include breakpoint($phone) {
-    border-bottom: 1px solid lighten($color-one, 15%);
+    @include breakpoint($tablet-down) {
+    border-bottom: 1px solid #424242;
       &.last {
         border-bottom: 0;
       }
@@ -76,7 +77,7 @@ nav {
       font-size: 85%;
       border-bottom: 0;
     }
-    @include breakpoint($tablet, $no-query: '.no-mq') {
+    @include breakpoint($desktop, $no-query: '.no-mq') {
       display: inline-block;
     }
   }
@@ -85,7 +86,7 @@ nav {
     text-decoration: none;
     &.active {
       color: #fff;
-      @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include breakpoint($desktop, $no-query: '.no-mq') {
         border-bottom: 2px solid #fff;
       }
     }
@@ -95,25 +96,129 @@ nav {
 .js {
   nav {
     ul.hide {
-      @include breakpoint($phone) {
+      @include breakpoint($tablet-down) {
         display: none;
       }
     }
   }
 }
 
-.menu-btn {
-  @include btn(#efefef, #000, #999, 3px, $small);
-  @include grad(#efefef, #ccc, $stop: 100%); 
-  font-family: $heading-font-family;
-  @include breakpoint($tablet, $no-query: '.no-mq') {
+.hamburger-menu  {
+  //@include btn(#efefef, #000, #999, 3px, $small);
+  //@include grad(#efefef, #ccc, $stop: 100%); 
+  //font-family: $heading-font-family;
+  position: absolute;
+  z-index: 9;
+  right: 2em;
+  @include breakpoint($desktop, $no-query: '.no-mq') {
     display: none;
   }
 }
 
+.main-nav {
+  @include breakpoint($tablet-down) {
+    // position: absolute;
+    // right: 2em;
+    float: right;
+    ul.menu {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      background: #1F1F1F;
+      margin-top: 0;
+      a, a:visited {
+        color: #fff !important;
+      }
+    }
+  }
+}
 
 .header-image-is-light {
   nav ul.menu a, nav ul.menu a:visited  {
     color: #000000;
+  }
+}
+
+$bar-width: 50px;
+$bar-height: 5px;
+$bar-spacing: 15px;
+
+.hamburger-menu {
+  position: absolute;
+  top: 27px;
+  // left: 0;
+  // right: 0;
+  bottom: 0;
+  //margin: auto;
+  width: $bar-width;
+  height: $bar-height + $bar-spacing*2;
+  cursor: pointer;
+}
+
+.bar,
+.bar:after,
+.bar:before {
+  width: $bar-width;
+  height: $bar-height;
+}
+
+.bar {
+  position: relative;
+  transform: translateY($bar-spacing);
+  background: rgba(255, 255, 255, 1);
+  transition: all 0ms 300ms;
+  
+  &.animate {
+    background: rgba(255, 255, 255, 0); 
+  }
+}
+
+.bar:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: $bar-spacing;
+  background: rgba(255, 255, 255, 1);
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: $bar-spacing;
+  background: rgba(255, 255, 255, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar.animate:after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}
+
+.bar.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}
+
+.header-image-is-light {
+  .bar {
+    background: #000;
+    &:before, &:after {
+      background: #000;
+    }
+  }
+  .close {
+    .bar {
+    background: none;
+    &:before, &:after {
+      background: #fff;
+    }
+  }
   }
 }

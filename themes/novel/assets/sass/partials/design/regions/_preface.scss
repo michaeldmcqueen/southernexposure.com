@@ -2,10 +2,10 @@
   position: relative;
   top: 0;
   height: 450px;
-  margin-top: -190px;
+  margin-top: -150px;
   z-index: 0;
   @include breakpoint($tablet, $no-query: '.no-mq') {
-    height: 650px;
+    height: 690px;
   }
   &:before {
     content: '';

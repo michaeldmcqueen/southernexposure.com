@@ -100,9 +100,16 @@ function header_image_displays_and_views_views_default_views() {
   $handler->display->display_options['fields']['field_header_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_header_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_header_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_header_image']['type'] = 'backstretch';
   $handler->display->display_options['fields']['field_header_image']['settings'] = array(
     'image_style' => '',
-    'image_link' => '',
+    'element' => 'other',
+    'element_other' => '.preface',
+    'duration' => 5000,
+    'fade' => '0',
+    'center_x' => 1,
+    'center_y' => 1,
+    'random' => FALSE,
   );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Nid */

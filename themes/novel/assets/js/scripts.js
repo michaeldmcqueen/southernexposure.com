@@ -1,12 +1,16 @@
 (function ($) {
   $(document).ready(function() {
     
-  $('.js nav').prepend('<button class="menu-btn">Menu</button>');
+  $('.js nav').prepend('<div class="hamburger-menu"><div class="bar"></div></div>');
   $('.js nav ul').addClass('hide');
-  $(".menu-btn").click(function(){
+  $(".hamburger-menu").click(function(){
         $(".js nav ul").toggleClass('hide');
-        $(".menu-btn").toggleClass('close');
+        $(".hamburger-menu").toggleClass('close');
     });
+
+  $('.hamburger-menu').on('click', function() {
+    $('.bar').toggleClass('animate');
+  })
   
   if(Modernizr.mq('only all')) {
     $('html').addClass('mq');

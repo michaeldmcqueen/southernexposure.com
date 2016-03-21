@@ -2,7 +2,10 @@ header.site-header {
   @include clearfix;
     position: relative;
     z-index: 2;
-    padding: 3em 0;
+    padding: 5px 0 0;
+    @include breakpoint($desktop, $no-query: '.no-mq') {
+      padding: 40px 0 0;
+    }
     &:before {
       content: '';
         background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.62) 100%);
@@ -35,7 +38,7 @@ header.site-header {
 }
 
 .main-nav {
-  @include breakpoint($tablet, $no-query: '.no-mq') {
+  @include breakpoint($desktop, $no-query: '.no-mq') {
     @include grid-span(8, 5);
   }
 }
