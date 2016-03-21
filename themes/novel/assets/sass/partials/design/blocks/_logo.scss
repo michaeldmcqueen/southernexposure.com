@@ -1,9 +1,9 @@
 .logo {
   .site-name {
     @include hide-text;
-    background: url('../images/logo.svg') no-repeat;
-    width: 393px;
-    height: 72px;
+    background: url('../images/logos/logo.svg') no-repeat;
+    width: 350px;
+    height: 47px;
     @include breakpoint($tablet, $no-query: '.no-mq') {
       background: url('../images/logos/logo-light-med.svg') no-repeat;
       width: 393px;
@@ -15,7 +15,7 @@
       height: 72px;
     }
     @include breakpoint($lg-desktop) {
-      background: url('../images/logo.svg') no-repeat;
+      background: url('../images/logos/logo-light-lg.svg') no-repeat;
       width: 422px;
       height: 77px;
     }
@@ -27,9 +27,9 @@
   .logo {
     .site-name {
       @include hide-text;
-      background: url('../images/logo.svg') no-repeat;
-      width: 393px;
-      height: 72px;
+      background: url('../images/logos/logo-dark.svg') no-repeat;
+      width: 350px;
+      height: 47px;
       @include breakpoint($tablet, $no-query: '.no-mq') {
         background: url('../images/logos/logo-dark-med.svg') no-repeat;
         width: 393px;
