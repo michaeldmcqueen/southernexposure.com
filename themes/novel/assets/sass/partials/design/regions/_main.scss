@@ -5,16 +5,11 @@ main#content {
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.21);
     padding: 2em 2em 3em;
     @include clearfix;
-  }
-}
-
-main.no-preface  {
-  .wrap {
-    position: relative;
+    margin-top: -2em;
     z-index: 3;
+    position: relative;
   }
 }
-
 
 .sidebar-second #content .main-content-wrap {
   @include clearfix;

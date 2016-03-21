@@ -1,2 +1,22 @@
 .logo {
+  .site-name {
+    @include hide-text;
+    background: url('../images/logo.svg') no-repeat;
+    width: 393px;
+    height: 72px;
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include grid-span(4, 1);
+    }
+    @include breakpoint($desktop) {
+      background: url('../images/logo.svg') no-repeat;
+      width: 393px;
+      height: 72px;
+    }
+    @include breakpoint($lg-desktop) {
+      background: url('../images/logo.svg') no-repeat;
+      width: 422px;
+      height: 77px;
+    }
+
+  }
 }
