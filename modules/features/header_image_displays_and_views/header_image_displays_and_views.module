@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Header Image Displays and Views feature.
+ */
+
+include_once 'header_image_displays_and_views.features.inc';

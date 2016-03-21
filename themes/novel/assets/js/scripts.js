@@ -14,11 +14,13 @@
     $('html').addClass('no-mq');
   };
   
-  if ($(".header-image-static")[0]){
-    $('body').addClass('header-image-static-exsists');
-  } else {
-      // Do something if class does not exist
+  if ($(".header-image-light")[0]){
+    $('body').addClass('header-image-is-light');
+  } else if ($(".header-image-dark")[0]){
+      $('body').addClass('header-image-is-dark');
   }
+
+
   
   // $('.slider').unslider({
   //   autoplay: true 

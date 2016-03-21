@@ -3,7 +3,31 @@ header.site-header {
     position: relative;
     z-index: 2;
     padding: 3em 0;
+    &:before {
+      content: '';
+        background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.62) 100%);
+        background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.62) 100%);
+        background-image: linear-gradient(to top, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.62) 100%);
+      width: 100%;
+      position: absolute;
+      height: 300px;
+      top: 0;
+      z-index: -1;
+    }
 }
+
+.header-image-is-light {
+   header.site-header {
+      &:before {
+      background-image: -webkit-linear-gradient(bottom, rgba(255,255,255,0.00) 0%, rgba(255,255,255,0.83) 100%);
+      background-image: -o-linear-gradient(bottom, rgba(255,255,255,0.00) 0%, rgba(255,255,255,0.83) 100%);
+      background-image: linear-gradient(to top, rgba(255,255,255,0.00) 0%, rgba(255,255,255,0.83) 100%);
+
+      }
+  } 
+}
+
+
 .logo {
   @include breakpoint($tablet, $no-query: '.no-mq') {
     @include grid-span(4, 1);

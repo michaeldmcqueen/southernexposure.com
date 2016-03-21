@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Header Images Content Type feature.
+ */
+
+include_once 'header_images_content_type.features.inc';

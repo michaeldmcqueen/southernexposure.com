@@ -23,6 +23,7 @@ dependencies[] = admin_menu
 dependencies[] = advagg
 dependencies[] = advanced_help
 dependencies[] = auto_nodetitle
+dependencies[] = backstretch
 dependencies[] = better_exposed_filters
 dependencies[] = blockify
 dependencies[] = breakpoints
