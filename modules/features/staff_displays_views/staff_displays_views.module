@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Staff Displays & VIews feature.
+ */
+
+include_once 'staff_displays_views.features.inc';

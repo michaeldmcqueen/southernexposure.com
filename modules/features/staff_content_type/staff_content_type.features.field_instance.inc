@@ -79,9 +79,10 @@ function staff_content_type_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
+    'fences_wrapper' => 'div_div_div',
     'field_name' => 'field_department',
     'label' => 'Department',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
