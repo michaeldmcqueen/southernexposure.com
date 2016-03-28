@@ -1,0 +1,13 @@
+name = Staff Displays & VIews
+core = 7.x
+package = Displays and Views
+version = 7.x-1.0
+dependencies[] = context
+dependencies[] = views
+features[context][] = staff
+features[ctools][] = context:context:3
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = staff
+features_exclude[dependencies][ctools] = ctools
+project path = profiles/vs_base/modules/features

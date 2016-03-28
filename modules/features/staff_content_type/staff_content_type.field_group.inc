@@ -24,8 +24,8 @@ function staff_content_type_field_group_info() {
     'weight' => '0',
     'children' => array(
       0 => 'body',
-      1 => 'field_job_title',
-      2 => 'field_headshot',
+      1 => 'field_headshot',
+      2 => 'field_job_title',
       3 => 'field_staff_first_name',
       4 => 'field_staff_last_name',
       5 => 'field_department',

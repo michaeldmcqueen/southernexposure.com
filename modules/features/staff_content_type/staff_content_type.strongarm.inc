@@ -89,6 +89,9 @@ function staff_content_type_strongarm() {
         'xmlsitemap' => array(
           'weight' => '2',
         ),
+        'redirect' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(),
     ),
@@ -138,6 +141,20 @@ function staff_content_type_strongarm() {
   $strongarm->name = 'node_submitted_staff';
   $strongarm->value = 0;
   $export['node_submitted_staff'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_staff_pattern';
+  $strongarm->value = 'staff/[node:title]';
+  $export['pathauto_node_staff_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_staff_department_pattern';
+  $strongarm->value = '';
+  $export['pathauto_taxonomy_term_staff_department_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

@@ -1,0 +1,28 @@
+.view-staff {
+  @include clearfix;
+  .views-row {
+    @include clearfix;
+    padding: 1em 0;
+    .section-one {
+      @include breakpoint($tablet, $no-query: '.no-mq') {
+        float: left;
+        width: 30%;
+        padding-right: 2em;
+      }
+    }
+    .section-two {
+      @include breakpoint($tablet, $no-query: '.no-mq') {
+        overflow: hidden;
+      }
+    }
+  }
+  .staff-job-title {
+    font-family: $font-family;
+    margin-top: 0.2em;
+    font-size: 1.4em;
+    font-style: italic;
+  }
+  .staff-name {
+    margin: 0;
+  }
+}
