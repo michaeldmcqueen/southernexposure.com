@@ -32,11 +32,12 @@ function staff_displays_views_views_default_views() {
   $handler->display->display_options['style_options']['grouping'] = array(
     0 => array(
       'field' => 'field_department',
-      'rendered' => 1,
+      'rendered' => 0,
       'rendered_strip' => 0,
     ),
   );
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -100,11 +101,14 @@ function staff_displays_views_views_default_views() {
 [body]
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Content: Department (field_department) */
+  $handler->display->display_options['sorts']['field_department_tid']['id'] = 'field_department_tid';
+  $handler->display->display_options['sorts']['field_department_tid']['table'] = 'field_data_field_department';
+  $handler->display->display_options['sorts']['field_department_tid']['field'] = 'field_department_tid';
+  /* Sort criterion: Content: Staff Weight (field_staff_weight) */
+  $handler->display->display_options['sorts']['field_staff_weight_value']['id'] = 'field_staff_weight_value';
+  $handler->display->display_options['sorts']['field_staff_weight_value']['table'] = 'field_data_field_staff_weight';
+  $handler->display->display_options['sorts']['field_staff_weight_value']['field'] = 'field_staff_weight_value';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -122,6 +126,94 @@ function staff_displays_views_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+
+  /* Display: Attachment */
+  $handler = $view->new_display('attachment', 'Attachment', 'attachment_1');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'title' => 'title',
+    'body' => 'body',
+    'field_department' => 'field_department',
+    'field_headshot' => 'field_headshot',
+    'field_job_title' => 'field_job_title',
+    'nothing' => 'nothing',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'title' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'body' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_department' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_headshot' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_job_title' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'nothing' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Staff Weight Selector */
+  $handler->display->display_options['fields']['field_staff_weight_selector']['id'] = 'field_staff_weight_selector';
+  $handler->display->display_options['fields']['field_staff_weight_selector']['table'] = 'field_data_field_staff_weight';
+  $handler->display->display_options['fields']['field_staff_weight_selector']['field'] = 'field_staff_weight_selector';
+  $handler->display->display_options['fields']['field_staff_weight_selector']['label'] = '';
+  $handler->display->display_options['fields']['field_staff_weight_selector']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_staff_weight_selector']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_staff_weight_selector']['weight_range'] = '20';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content: Staff Weight (field_staff_weight) */
+  $handler->display->display_options['sorts']['field_staff_weight_value']['id'] = 'field_staff_weight_value';
+  $handler->display->display_options['sorts']['field_staff_weight_value']['table'] = 'field_data_field_staff_weight';
+  $handler->display->display_options['sorts']['field_staff_weight_value']['field'] = 'field_staff_weight_value';
+  $handler->display->display_options['displays'] = array(
+    'block' => 'block',
+    'default' => 0,
+  );
   $export['staff'] = $view;
 
   return $export;

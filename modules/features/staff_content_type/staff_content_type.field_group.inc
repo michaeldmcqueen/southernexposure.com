@@ -29,7 +29,8 @@ function staff_content_type_field_group_info() {
       3 => 'field_staff_first_name',
       4 => 'field_staff_last_name',
       5 => 'field_department',
-      6 => 'title',
+      6 => 'field_staff_weight',
+      7 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

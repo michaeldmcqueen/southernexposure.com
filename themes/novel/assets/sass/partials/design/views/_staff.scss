@@ -1,5 +1,18 @@
 .view-staff {
   @include clearfix;
+  h3 {
+    padding-top: .5em;
+    font-family: $font-family;
+    font-style: italic;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    background: #efefef;
+    margin-left: -1em;
+    background: -moz-linear-gradient(left,  rgba(239,239,239,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(239,239,239,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(239,239,239,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  }
   .views-row {
     @include clearfix;
     padding: 1em 0;
@@ -24,5 +37,9 @@
   }
   .staff-name {
     margin: 0;
+    padding: 0;
+    background: none;
+    font-family: $heading-font-family;
+    font-style: normal;
   }
 }
