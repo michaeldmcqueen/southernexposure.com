@@ -87,6 +87,7 @@ dependencies[] = view_unpublished
 dependencies[] = views
 dependencies[] = views_bulk_operations
 dependencies[] = views_ui_basic
+dependencies[] = webform
 dependencies[] = weight
 dependencies[] = xmlsitemap
 

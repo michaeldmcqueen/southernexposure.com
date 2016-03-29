@@ -77,6 +77,7 @@ projects[view_unpublished][version] = "1.2"
 projects[views][version] = "3.13"
 projects[views_bulk_operations][version] = "3.3"
 projects[views_ui_basic][version] = "1.3"
+projects[webform][version] = "4.12"
 projects[weight][version] = "3.1"
 projects[xmlsitemap][version] = "2.2"
 
