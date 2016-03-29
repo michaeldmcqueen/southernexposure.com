@@ -24,9 +24,8 @@ function static_page_content_type_field_group_info() {
     'weight' => '0',
     'children' => array(
       0 => 'body',
-      1 => 'field_header_image',
-      2 => 'field_site_section',
-      3 => 'title',
+      1 => 'field_sub_title',
+      2 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

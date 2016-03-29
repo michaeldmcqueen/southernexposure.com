@@ -14,7 +14,7 @@ function static_page_content_type_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_static_page';
-  $strongarm->value = 'edit-diff';
+  $strongarm->value = 'edit-menu';
   $export['additional_settings__active_tab_static_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -52,7 +52,6 @@ function static_page_content_type_strongarm() {
   $strongarm->value = array(
     0 => 'default',
     1 => 'teaser',
-    2 => 'discovery_tool',
   );
   $export['ds_extras_view_modes_static_page'] = $strongarm;
 
@@ -92,6 +91,12 @@ function static_page_content_type_strongarm() {
       'home_page' => array(
         'custom_settings' => FALSE,
       ),
+      'hide' => array(
+        'custom_settings' => TRUE,
+      ),
+      'home' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -105,6 +110,9 @@ function static_page_content_type_strongarm() {
           'weight' => '2',
         ),
         'xmlsitemap' => array(
+          'weight' => '30',
+        ),
+        'redirect' => array(
           'weight' => '30',
         ),
       ),
@@ -270,6 +278,13 @@ function static_page_content_type_strongarm() {
   $strongarm->name = 'node_submitted_static_page';
   $strongarm->value = 0;
   $export['node_submitted_static_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_static_page_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_static_page_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

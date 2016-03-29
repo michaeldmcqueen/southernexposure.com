@@ -26,6 +26,12 @@ function front_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-front_blocks-block' => array(
+          'module' => 'views',
+          'delta' => 'front_blocks-block',
+          'region' => 'preface',
+          'weight' => '-10',
+        ),
         'views-case_studies-block_1' => array(
           'module' => 'views',
           'delta' => 'case_studies-block_1',

@@ -1,29 +1,28 @@
 <?php
 /**
  * @file
- * case_study_displays.views_default.inc
+ * front.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function case_study_displays_views_default_views() {
+function front_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'case_studies';
+  $view->name = 'front_blocks';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Case Studies';
+  $view->human_name = 'Front Blocks';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Case Studies';
-  $handler->display->display_options['css_class'] = 'case-studies-list-view';
+  $handler->display->display_options['css_class'] = 'front-intro';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -31,7 +30,8 @@ function case_study_displays_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -39,6 +39,18 @@ function case_study_displays_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h1';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Sub Title */
+  $handler->display->display_options['fields']['field_sub_title']['id'] = 'field_sub_title';
+  $handler->display->display_options['fields']['field_sub_title']['table'] = 'field_data_field_sub_title';
+  $handler->display->display_options['fields']['field_sub_title']['field'] = 'field_sub_title';
+  $handler->display->display_options['fields']['field_sub_title']['label'] = '';
+  $handler->display->display_options['fields']['field_sub_title']['element_type'] = 'h2';
+  $handler->display->display_options['fields']['field_sub_title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_sub_title']['element_default_classes'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -56,27 +68,17 @@ function case_study_displays_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'case_study' => 'case_study',
+    'static_page' => 'static_page',
   );
+  /* Filter criterion: Content: Nid */
+  $handler->display->display_options['filters']['nid']['id'] = 'nid';
+  $handler->display->display_options['filters']['nid']['table'] = 'node';
+  $handler->display->display_options['filters']['nid']['field'] = 'nid';
+  $handler->display->display_options['filters']['nid']['value']['value'] = '3';
 
-  /* Display: Case Studies - List View */
-  $handler = $view->new_display('block', 'Case Studies - List View', 'block');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-
-  /* Display: Case Studies - Front View */
-  $handler = $view->new_display('block', 'Case Studies - Front View', 'block_1');
-  $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['defaults']['header'] = FALSE;
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '<div class="front-case-study-intro"><p>With each new client we see an opportunity to create something beautiful and we take the time to make it happen, see what our clients have to say about the experience.</p></div>';
-  $handler->display->display_options['header']['area']['format'] = 'full_html';
-  $export['case_studies'] = $view;
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block');
+  $export['front_blocks'] = $view;
 
   return $export;
 }
