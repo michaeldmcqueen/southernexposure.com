@@ -1,0 +1,11 @@
+name = Webform - Display
+core = 7.x
+package = Displays and Views
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = ds
+features[ctools][] = ds:ds:1
+features[ds_field_settings][] = node|webform|default
+features[ds_layout_settings][] = node|webform|default
+features[features_api][] = api:2
+project path = profiles/vs_base/modules/features
