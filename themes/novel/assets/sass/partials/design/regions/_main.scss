@@ -1,11 +1,14 @@
 main#content {
   @include clearfix;
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    margin: 0 2em;
+  }
   .wrap {
     background: #FFFFFF;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.21);
     padding: 2em 2em 3em;
     @include clearfix;
-    margin: -2em 2em 0 2em;
+    margin-top: -2em;
     z-index: 3;
     position: relative;
   }
