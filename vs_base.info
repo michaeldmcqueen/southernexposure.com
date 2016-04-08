@@ -63,6 +63,7 @@ dependencies[] = libraries
 dependencies[] = link
 dependencies[] = magic
 dependencies[] = media
+dependencies[] = media_browser_plus
 dependencies[] = media_ckeditor
 dependencies[] = menu_attributes
 dependencies[] = menu_block
