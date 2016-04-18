@@ -44,11 +44,11 @@ function context_defaults_context_default_contexts() {
           'region' => 'content',
           'weight' => '-9',
         ),
-        'system-powered-by' => array(
-          'module' => 'system',
-          'delta' => 'powered-by',
+        'menu_block-1' => array(
+          'module' => 'menu_block',
+          'delta' => '1',
           'region' => 'sidebar_second',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
       ),
     ),

@@ -35,7 +35,7 @@ nav {
       li:hover {
         ul {
           z-index: 99;
-          background-color: darken($color-one, 5%);
+          background-color: #fff;
           top:110%;
           left: 0;
           opacity: 1;
@@ -43,7 +43,10 @@ nav {
           li {
             display: block;
             &:hover {
-              background-color: darken($color-one, 10%);
+              background-color: lighten($color-one, 5%);
+              a {
+                color: #fff;
+              }
             }
           }
         }
@@ -87,7 +90,7 @@ nav {
     &.active {
       color: #fff;
       @include breakpoint($desktop, $no-query: '.no-mq') {
-        border-bottom: 2px solid #fff;
+        //border-bottom: 2px solid #fff;
       }
     }
   }
@@ -130,6 +133,15 @@ nav {
       background: rgba(31, 31, 31, 0.95);
       margin-top: 0;
       z-index: 9;
+      ul.menu {
+        position: relative;
+        height: auto;
+        width: auto;
+        background: none;
+        li {
+          padding: 1em 0 0;
+        }
+      }
       a, a:visited {
         color: #fff !important;
       }
