@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the FAQ Display and VIews feature.
+ */
+
+include_once 'faq_display_and_views.features.inc';
