@@ -24,9 +24,6 @@
         &.active {
           background: #F4F4F4;
         }
-        &:last-child {
-          border-bottom: 1px solid #CDCDCD;
-        }
         &:before {
           content: '';
           display: inline-block;
@@ -35,6 +32,9 @@
           height: 12px;
           margin-right: 1em;
         }
+      }
+      &:last-child a {
+        border-bottom: 1px solid #CDCDCD;
       }
     }
   }
