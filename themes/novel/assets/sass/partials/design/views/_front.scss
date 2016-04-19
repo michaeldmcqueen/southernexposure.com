@@ -24,6 +24,23 @@
   margin: 0 5px;
   border-radius: 3px;
 }
+.front {
+  .slick-prev, .slick-next {
+    z-index: 999;
+    &:before {
+      color: #483B3B;
+    }
+  }
+  .slick-next {
+    right: 0;
+  }
+  .slick-prev {
+    left: 0;
+  }
+  .variable-width {
+    padding: 0 2em;
+  }
+}
 
 
 #block-views-front-blocks-block {
