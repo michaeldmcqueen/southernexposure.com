@@ -1,5 +1,7 @@
 #content .sidebar-second {
+  padding-top: 2em;
   @include breakpoint($tablet, $no-query: '.no-mq') {
+    padding-top: 0;
     @include grid-span(3,10);
   }
 }

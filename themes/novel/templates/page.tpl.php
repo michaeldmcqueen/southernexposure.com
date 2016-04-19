@@ -62,8 +62,40 @@
 <footer>
     <div class="wrap">
       <?php print render($page['footer']); ?>
+      <div class="col newsletter-signup col-1st">
+        <h3>Join Our Newsletter</h3>
+        <h6>Sign up to get updates and tips from our team.</h6>
+        <form action="/portfolio/overall-landscapes%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" accept-charset="UTF-8" method="post" id="campaignmonitor-general-form">
+          <div><div class="form-item" id="edit-name-wrapper">
+           <label for="edit-name">Name: <span class="form-required" title="This field is required.">*</span></label>
+           <input type="text" maxlength="50" name="name" id="edit-name" size="20" placeholder="Your Name" value="" class="form-text required">
+          </div>
+          <div class="form-item" id="edit-email-wrapper">
+           <label for="edit-email">Email: <span class="form-required" title="This field is required.">*</span></label>
+           <input type="text" maxlength="100" name="email" id="edit-email" size="20" value="" placeholder="Your Email" class="form-text required">
+          </div>
+          <div class="form-item" id="edit-unsubscribe-newsletter-wrapper">
+           <label class="option" for="edit-unsubscribe-newsletter"><input type="checkbox" name="unsubscribe_newsletter" id="edit-unsubscribe-newsletter" value="1" class="form-checkbox"> Unsubscribe</label>
+          </div>
+          <input type="submit" name="op" id="edit-submit" value="Submit" class="form-submit">
+          <input type="hidden" name="form_build_id" id="form-ce1826ca20fef857066172577398627d" value="form-ce1826ca20fef857066172577398627d">
+          <input type="hidden" name="form_id" id="edit-campaignmonitor-general-form" value="campaignmonitor_general_form">
+
+        </div>
+      </form>
+      </div>
+      
+      <div class="col col-2nd">
+        <h3>Contact Us</h3>
+        <p><a href="/contact-us">Email Us</a></p>
+        <p>745 Jackson Court<br>
+          Windsor, CO. 80550</p>
+          <p>Office 970-674-3010<br> 
+          Cell 970-566-0435</p>
+      </div>
       <div class="col col-3rd">
-        <p>© Copyright 2004 - 2016.  Southern Exposure Landscape & Sprinkler LLC</p>
+        <p>&copy; Copyright 2004 - <?php echo date("Y") ?>.  Southern Exposure Landscape & Sprinkler LLC</p>
+        <p>Site By: <a href="https://www.variantstudios.com" target="_blank">Variant Studios</a></p>
       </div>
     </div>
 </footer>

@@ -1,6 +1,7 @@
 input[type="submit"] {
-  @include btn($link, #fff, darken($link, 5%), 3px, $normal);
+  @include btn($link, #fff, #3E8144, 3px, 90%);
   font-family: $heading-font-family;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.20), inset 0px 1px 0px 0px #FFFFFF;
 }
 
 input#edit-reset[type="submit"] {

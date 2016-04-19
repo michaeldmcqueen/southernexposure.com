@@ -1,5 +1,83 @@
 footer {
   @include clearfix;
-  //background: $footer-bg url('../images/footer-bg.jpg') repeat;
-  padding: 5em 0;
+  background: #000 url('../images/footer.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 2em 0 5em;
+  .col {
+    padding-bottom: 2em;
+  }
+  * {
+    color: #fff;
+  }
+  h3 {
+    font-size: 1.4em;
+    margin-bottom: 0.35em;
+  }
+  form {
+    label {
+      display: none;
+    }
+    label.option {
+      color: #fff;
+      font-style: italic;
+      font-size: 90%;
+    }
+  }
+  input[type="text"],input[type="email"] {
+    background: none;
+    border: 1px solid #fff;
+    font-family: $heading-font-family;
+    color: #fff;
+    width: 100%;
+    font-size: 85%;
+    padding: .65em 1em;
+  }
+  input::-webkit-input-placeholder{
+     color: #fff;
+    }
+
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+     .col-1st {
+       @include grid-span(3.5,1);
+     }
+      .col-2nd {
+       @include grid-span(4,5);
+     }
+      .col-3rd {
+       @include grid-span(3,10);
+       text-align: right;
+     }
+  }
+
+  .newsletter-signup {
+    h6 {
+      font-family: $font-family;
+      font-style: italic;
+      margin-top: 0;
+      font-size: 1.1em;
+      margin-bottom: 1.3em;
+    }
+  }
+.col-2nd {
+   p {
+    font-style: italic;
+    font-size: 1.1em;
+    a {
+      color: #fff;
+    }
+   }
+ }
+
+ .col-3rd {
+   font-family: $heading-font-family;
+   font-size: 0.9em;
+   padding-top: 1em;
+   a {
+      color: #fff;
+    }
+ }
+
 }
