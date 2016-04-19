@@ -8,7 +8,15 @@
  * @param $hook
  *   The name of the template being rendered ("maintenance_page" in this case.)
  */
- 
+function novel_preprocess_page(&$vars) {
+  if(drupal_is_front_page()) {
+    drupal_add_js(drupal_get_path('theme', 'novel') . '/assets/js/slick.min.js');
+    drupal_add_js(drupal_get_path('theme', 'novel') . '/assets/js/clients.js');
+    drupal_add_css(drupal_get_path('theme', 'novel') . '/assets/css/slick.css');
+    drupal_add_css(drupal_get_path('theme', 'novel') . '/assets/css/slick-theme.css');
+
+  }
+}
 
 
  

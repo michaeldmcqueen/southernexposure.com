@@ -20,3 +20,9 @@ main#content {
     @include grid-span(8.5,1);
   }
 }
+
+.front {
+  .main-content-wrap {
+    margin-bottom: 2em;
+  }
+}

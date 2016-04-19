@@ -44,6 +44,12 @@ function front_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
+        'views-clients_we_ve_helped-block' => array(
+          'module' => 'views',
+          'delta' => 'clients_we_ve_helped-block',
+          'region' => 'postscript',
+          'weight' => '-10',
+        ),
       ),
     ),
   );

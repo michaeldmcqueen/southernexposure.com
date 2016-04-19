@@ -17,10 +17,11 @@
 //     }
 //   }
 // }
-.flexslider {
-  margin: 0;
-  border: 0;
-  padding: 0;
+.front .slick-slide {
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #DDD;
+  margin: 0 5px;
 }
 
 
@@ -63,5 +64,12 @@
       font-size: 1.25em;
       font-style: italic;
     }
+  }
+}
+
+.front .flexslider {
+  li {
+    // height: 100px !important;
+    // width: auto !important;
   }
 }

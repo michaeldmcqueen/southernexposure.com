@@ -1,0 +1,21 @@
+.postscript {
+  clear: both;
+  @include clearfix;
+  background: #F7F7F7;
+  margin: 0 -2em -3em;
+  padding: 2em;
+  text-align: center;
+  .view-header {
+    padding-bottom: 1em;
+    h4 {
+      margin-bottom: 0.25em;
+    } 
+    p {
+      font-size: 1.2em;
+      font-style: italic;
+      @include breakpoint($tablet, $no-query: '.no-mq') {
+        max-width: 75%;
+      }
+    }
+  }
+}
