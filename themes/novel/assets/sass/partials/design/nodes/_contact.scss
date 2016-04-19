@@ -1,0 +1,20 @@
+.node-webform.node-teaser {
+  .section-one {
+    background: #f7f7f7;
+    padding: 0em 2em 1em;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include grid-span(4.7,1);
+    }
+  }
+  .section-two {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include grid-span(7,6);
+    }
+  }
+  .section-three {
+    clear: both;
+    padding-top: 2em;
+  }
+}

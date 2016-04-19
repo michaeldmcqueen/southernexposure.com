@@ -17,6 +17,13 @@ function webform_content_type_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'contact_form' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -25,10 +32,11 @@ function webform_content_type_field_default_field_instances() {
         'weight' => 1,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 1,
       ),
     ),
     'ds_extras_field_template' => '',
