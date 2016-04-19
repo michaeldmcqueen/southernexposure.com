@@ -37,7 +37,7 @@ function front_image_default_styles() {
         'name' => 'image_scale',
         'data' => array(
           'width' => '',
-          'height' => 90,
+          'height' => 75,
           'upscale' => 1,
         ),
         'weight' => 1,
