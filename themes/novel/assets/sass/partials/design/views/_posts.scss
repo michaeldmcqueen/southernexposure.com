@@ -1,54 +1,38 @@
-// This is for news or blog view
-.view-blog {
-  @include clearfix;
-  .view-content{
-    @include breakpoint($tablet, $no-query: '.no-mq') {
-      @include grid-span(7.75,1);
+// Case Study Teaders
+.view-news-tips {
+  .node-article.node-teaser {
+    @include clearfix;
+    padding-bottom: 2em;
+    .field-name-post-date {
+      font-style: italic;
+      margin-bottom: .5em;
     }
-  }
-  .view-filters {
-    @include breakpoint($tablet, $no-query: '.no-mq') {
-      @include grid-span(4,9);
+    .section-one {
+      @include breakpoint($tablet, $no-query: '.no-mq') {
+        float: left;
+        width: 30%;
+        margin-right: 2em;
+      }
+      img {
+        @include img-border;
+      }
     }
-  }
-}
-
-.node-vs-blog-post.node-teaser {
-  padding: 1em 0;
-  img {
-    @include box-shadow(0,2px,4px,rgba(0,0,0,0.5));
-  }
-}
-
-.page-blog  .preface {
-  #block-views-blog-block-1 {
-    max-width: 1100px;
-    position: relative;
-    display: block;
-    height: 100%;
-    margin: 0 auto;
-    .content {
-      position: absolute;
-      background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%, rgba(0,0,0,0.60) 100%);    
-      right: 0;
-      width: 45%;
-      bottom: 0;
-      padding: 30% 2em 2em;
-      text-align: right;
-    }
-    .view-content {
-      width: 100%;
-      float: none;
-      margin: 0;
-    }
-    h3 {
-      color: #fff;
-      text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
-      font-size: 2em;
-      a {
-        color: #fff;
-        text-decoration: none;
+    .section-two {
+      overflow: hidden;
+      h3 {
+        font-size: 1.5em;
+        @include breakpoint($tablet, $no-query: '.no-mq') {
+          margin-top: 0;
+        }
+        a {
+          color: inherit;
+        }
       }
     }
   }
+  .case-study-teaser-testimonial {
+    font-style: italic;
+    margin-bottom: 1em;
+  }
 }
+

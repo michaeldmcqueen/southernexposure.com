@@ -25,7 +25,8 @@ function article_content_type_field_group_info() {
     'children' => array(
       0 => 'body',
       1 => 'field_teaser',
-      2 => 'title',
+      2 => 'field_news_gallery',
+      3 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

@@ -35,7 +35,13 @@ function header_images_content_type_field_default_field_bases() {
         'sort' => array(
           'type' => 'none',
         ),
-        'target_bundles' => array(),
+        'target_bundles' => array(
+          'case_study' => 'case_study',
+          'portfolio' => 'portfolio',
+          'service' => 'service',
+          'static_page' => 'static_page',
+          'webform' => 'webform',
+        ),
       ),
       'target_type' => 'node',
     ),

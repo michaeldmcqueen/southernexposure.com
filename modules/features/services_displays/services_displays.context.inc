@@ -19,6 +19,7 @@ function services_displays_context_default_contexts() {
   $context->conditions = array(
     'node' => array(
       'values' => array(
+        'case_study' => 'case_study',
         'service' => 'service',
       ),
       'options' => array(
@@ -28,6 +29,7 @@ function services_displays_context_default_contexts() {
     'path' => array(
       'values' => array(
         'services' => 'services',
+        'case-studies' => 'case-studies',
       ),
     ),
   );
