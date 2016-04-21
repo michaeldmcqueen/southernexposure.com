@@ -2,7 +2,7 @@
 .case-studies-list-view {
   .node-case-study.node-teaser {
     @include clearfix;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     .section-one {
       @include breakpoint($tablet, $no-query: '.no-mq') {
         float: left;
