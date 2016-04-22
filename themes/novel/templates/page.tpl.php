@@ -27,6 +27,7 @@
 
 <!-- Close Preface -->
 <main id="content" class="<?php if(empty ($page['preface']) ): ?>no-preface<?php endif; ?> ">
+  <div class="trim"></div>
   <div class="wrap">
     <?php if ($page['help']): ?>
         <?php print render($page['help']); ?>

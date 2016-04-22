@@ -11,6 +11,43 @@ main#content {
     margin-top: -2em;
     z-index: 3;
     position: relative;
+    &:before {
+
+    }
+    
+  }
+}
+
+.trim {
+  position: relative;
+  max-width: $container_width;
+  margin: 0 auto;
+  padding: 0 2em;
+  display: none;
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+     display: block;
+  }
+  &:after {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      content: '';
+      background: url('../images/sidebar-right.jpg') no-repeat;
+      width: 243px;
+      height: 880px;
+      position: absolute;
+      right: -243px;
+      top: 150px;
+    }
+  }
+  &:before {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      content: '';
+      background: url('../images/sidebar-left.jpg') no-repeat;
+      width: 243px;
+      height: 880px;
+      position: absolute;
+      left: -243px;
+      top: 150px;
+    }
   }
 }
 
