@@ -26,6 +26,7 @@ function media_defaults_user_default_permissions() {
     'name' => 'add media from remote sources',
     'roles' => array(
       'administrator' => 'administrator',
+      'content editor' => 'content editor',
       'manager' => 'manager',
     ),
     'module' => 'media_internet',

@@ -79,8 +79,8 @@ function case_study_content_type_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'image_link' => 'content',
+          'image_style' => 'half_width',
         ),
         'type' => 'image',
         'weight' => 0,

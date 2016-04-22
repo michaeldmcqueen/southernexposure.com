@@ -35,6 +35,7 @@ function files_defaults_user_default_permissions() {
     'name' => 'bypass file access',
     'roles' => array(
       'administrator' => 'administrator',
+      'content editor' => 'content editor',
       'manager' => 'manager',
     ),
     'module' => 'file_entity',
@@ -78,6 +79,7 @@ function files_defaults_user_default_permissions() {
     'name' => 'delete any image files',
     'roles' => array(
       'administrator' => 'administrator',
+      'content editor' => 'content editor',
       'manager' => 'manager',
     ),
     'module' => 'file_entity',
@@ -121,6 +123,7 @@ function files_defaults_user_default_permissions() {
     'name' => 'delete own image files',
     'roles' => array(
       'administrator' => 'administrator',
+      'content editor' => 'content editor',
       'manager' => 'manager',
     ),
     'module' => 'file_entity',
@@ -328,6 +331,8 @@ function files_defaults_user_default_permissions() {
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
+      'content editor' => 'content editor',
+      'manager' => 'manager',
     ),
     'module' => 'file_entity',
   );

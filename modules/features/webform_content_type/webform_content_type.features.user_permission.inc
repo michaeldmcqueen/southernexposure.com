@@ -15,6 +15,8 @@ function webform_content_type_user_default_permissions() {
     'name' => 'access all webform results',
     'roles' => array(
       'administrator' => 'administrator',
+      'content editor' => 'content editor',
+      'manager' => 'manager',
     ),
     'module' => 'webform',
   );
@@ -40,7 +42,11 @@ function webform_content_type_user_default_permissions() {
   // Exported permission: 'create webform content'.
   $permissions['create webform content'] = array(
     'name' => 'create webform content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'content editor' => 'content editor',
+      'manager' => 'manager',
+    ),
     'module' => 'node',
   );
 
@@ -56,14 +62,22 @@ function webform_content_type_user_default_permissions() {
   // Exported permission: 'delete any webform content'.
   $permissions['delete any webform content'] = array(
     'name' => 'delete any webform content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'content editor' => 'content editor',
+      'manager' => 'manager',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete own webform content'.
   $permissions['delete own webform content'] = array(
     'name' => 'delete own webform content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'content editor' => 'content editor',
+      'manager' => 'manager',
+    ),
     'module' => 'node',
   );
 
@@ -88,14 +102,22 @@ function webform_content_type_user_default_permissions() {
   // Exported permission: 'edit any webform content'.
   $permissions['edit any webform content'] = array(
     'name' => 'edit any webform content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'content editor' => 'content editor',
+      'manager' => 'manager',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit own webform content'.
   $permissions['edit own webform content'] = array(
     'name' => 'edit own webform content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'content editor' => 'content editor',
+      'manager' => 'manager',
+    ),
     'module' => 'node',
   );
 

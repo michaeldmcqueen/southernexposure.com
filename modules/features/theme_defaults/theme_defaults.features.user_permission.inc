@@ -20,7 +20,11 @@ function theme_defaults_user_default_permissions() {
   // Exported permission: 'view the administration theme'.
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'content editor' => 'content editor',
+      'manager' => 'manager',
+    ),
     'module' => 'system',
   );
 

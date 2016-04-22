@@ -50,6 +50,7 @@ function admin_defaults_user_default_permissions() {
     'name' => 'access contextual links',
     'roles' => array(
       'administrator' => 'administrator',
+      'content editor' => 'content editor',
       'manager' => 'manager',
     ),
     'module' => 'contextual',
@@ -100,17 +101,6 @@ function admin_defaults_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'assign node weight'.
-  // $permissions['assign node weight'] = array(
-  //   'name' => 'assign node weight',
-  //   'roles' => array(
-  //     'administrator' => 'administrator',
-  //     'content editor' => 'content editor',
-  //     'manager' => 'manager',
-  //   ),
-  //   'module' => 'weight',
-  // );
-
   // Exported permission: 'bypass node access'.
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
@@ -158,6 +148,7 @@ function admin_defaults_user_default_permissions() {
     'name' => 'publish any content',
     'roles' => array(
       'administrator' => 'administrator',
+      'content editor' => 'content editor',
       'manager' => 'manager',
     ),
     'module' => 'publishcontent',
@@ -168,6 +159,7 @@ function admin_defaults_user_default_permissions() {
     'name' => 'publish editable content',
     'roles' => array(
       'administrator' => 'administrator',
+      'content editor' => 'content editor',
       'manager' => 'manager',
     ),
     'module' => 'publishcontent',
@@ -189,6 +181,7 @@ function admin_defaults_user_default_permissions() {
     'name' => 'unpublish any content',
     'roles' => array(
       'administrator' => 'administrator',
+      'content editor' => 'content editor',
       'manager' => 'manager',
     ),
     'module' => 'publishcontent',
@@ -199,6 +192,7 @@ function admin_defaults_user_default_permissions() {
     'name' => 'unpublish editable content',
     'roles' => array(
       'administrator' => 'administrator',
+      'content editor' => 'content editor',
       'manager' => 'manager',
     ),
     'module' => 'publishcontent',
