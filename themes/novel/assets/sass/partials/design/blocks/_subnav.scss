@@ -11,17 +11,9 @@
     list-style: none;
     font-size: 0.9em;
   }
-  a {
-    border-top: 1px solid #CDCDCD;
-    font-family: $heading-font-family;
-    color: $heading-color;
-    text-decoration: none;
-    display: block;
-    font-size: 1em;
-    padding: .75em 1em .75em 2em;
-    &.active {
-      background: #F4F4F4;
-    }
+  ul li {
+    position: relative;
+    margin: 0;
     &:before {
       content: '';
       display: inline-block;
@@ -29,6 +21,21 @@
       width: 7px;
       height: 12px;
       margin-right: 1em;
+      position: absolute;
+      left: 25px;
+      top: 18px;
+    }
+  }
+  a {
+    border-top: 1px solid #CDCDCD;
+    font-family: $heading-font-family;
+    color: $heading-color;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    padding: .75em 1em .75em 3em;
+    &.active {
+      background: #F4F4F4;
     }
   }
   h2 {
