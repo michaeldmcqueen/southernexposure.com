@@ -129,6 +129,15 @@ function staff_displays_views_views_default_views() {
 
   /* Display: Attachment */
   $handler = $view->new_display('attachment', 'Attachment', 'attachment_1');
+  $handler->display->display_options['defaults']['use_ajax'] = FALSE;
+  $handler->display->display_options['use_ajax'] = TRUE;
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    3 => '3',
+    4 => '4',
+    5 => '5',
+  );
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
@@ -205,6 +214,20 @@ function staff_displays_views_views_default_views() {
   $handler->display->display_options['fields']['field_staff_weight_selector']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_staff_weight_selector']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_staff_weight_selector']['weight_range'] = '20';
+  /* Field: Content: Staff Weight */
+  $handler->display->display_options['fields']['field_staff_weight']['id'] = 'field_staff_weight';
+  $handler->display->display_options['fields']['field_staff_weight']['table'] = 'field_data_field_staff_weight';
+  $handler->display->display_options['fields']['field_staff_weight']['field'] = 'field_staff_weight';
+  $handler->display->display_options['fields']['field_staff_weight']['label'] = '';
+  $handler->display->display_options['fields']['field_staff_weight']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_staff_weight']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_staff_weight']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_staff_weight']['type'] = 'weight_integer';
+  $handler->display->display_options['fields']['field_staff_weight']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  $handler->display->display_options['fields']['field_staff_weight']['field_api_classes'] = TRUE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Content: Staff Weight (field_staff_weight) */
   $handler->display->display_options['sorts']['field_staff_weight_value']['id'] = 'field_staff_weight_value';

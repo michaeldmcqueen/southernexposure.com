@@ -27,3 +27,10 @@ table.sticky-enabled, table.sticky-header {
     }
   }
 }
+
+a.tabledrag-handle .handle {
+    height: 22px;
+    margin: 0;
+    padding: 0.42em 0.5em;
+    width: 33px;
+}
