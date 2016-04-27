@@ -52,9 +52,61 @@ function faq_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-faq-field_faq_weight'.
+  $field_instances['node-faq-field_faq_weight'] = array(
+    'bundle' => 'faq',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div_div_div',
+    'field_name' => 'field_faq_weight',
+    'label' => 'FAQ Weight',
+    'required' => 0,
+    'settings' => array(
+      'range' => 20,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'weight',
+      'settings' => array(
+        'range' => 20,
+      ),
+      'type' => 'weight_selector',
+      'weight' => 2,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('FAQ Weight');
 
   return $field_instances;
 }

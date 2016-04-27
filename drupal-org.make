@@ -83,6 +83,7 @@ projects[views_tree][version] = "2.0"
 projects[views_ui_basic][version] = "1.3"
 projects[webform][version] = "4.12"
 projects[weight][version] = "3.1"
+projects[weight][patch][] = "https://www.drupal.org/files/issues/no-assign-node-weight-permission-2674418-1.patch"
 projects[xmlsitemap][version] = "2.2"
 
 
