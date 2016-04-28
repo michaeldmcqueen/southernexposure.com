@@ -25,7 +25,8 @@ function services_field_group_info() {
     'children' => array(
       0 => 'body',
       1 => 'field_service_gallery',
-      2 => 'title',
+      2 => 'field_service_weight',
+      3 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
