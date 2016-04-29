@@ -28,6 +28,9 @@ nav {
         -webkit-transition:all .5s ease;
         width: 200px;
         box-shadow: 1px 1px 4px rgba(0,0,0,.5);
+        a.active-trail {
+          color: $heading-color;
+        }
         li {
           padding: .5em 1.25em ;
         }
@@ -40,6 +43,7 @@ nav {
           left: 0;
           opacity: 1;
           visibility: visible;
+          color: $heading-color;
           li {
             display: block;
             &:hover {
