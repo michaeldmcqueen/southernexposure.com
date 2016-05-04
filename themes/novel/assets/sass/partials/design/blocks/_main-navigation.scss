@@ -162,7 +162,7 @@ nav {
   }
 }
 
-$bar-width: 40px;
+$bar-width: 30px;
 $bar-height: 4px;
 $bar-spacing: 10px;
 
@@ -176,6 +176,7 @@ $bar-spacing: 10px;
   width: $bar-width;
   height: $bar-height + $bar-spacing*2;
   cursor: pointer;
+  right: 1em;
 }
 
 .bar,

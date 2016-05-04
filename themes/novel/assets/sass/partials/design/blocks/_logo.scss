@@ -2,7 +2,7 @@
   .site-name {
     @include hide-text;
     background: url('../images/logos/logo.svg') no-repeat;
-    width: 350px;
+    width: 250px;
     height: 47px;
     @include breakpoint($tablet, $no-query: '.no-mq') {
       background: url('../images/logos/logo-light-med.svg') no-repeat;
@@ -28,7 +28,7 @@
     .site-name {
       @include hide-text;
       background: url('../images/logos/logo-dark.svg') no-repeat;
-      width: 350px;
+      width: 250px;
       height: 47px;
       @include breakpoint($tablet, $no-query: '.no-mq') {
         background: url('../images/logos/logo-dark-med.svg') no-repeat;
