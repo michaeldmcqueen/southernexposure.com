@@ -52,7 +52,7 @@ function portfolio_content_type_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => 2,
     ),
   );
 
@@ -122,6 +122,57 @@ function portfolio_content_type_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-portfolio-field_portfolio_weight'.
+  $field_instances['node-portfolio-field_portfolio_weight'] = array(
+    'bundle' => 'portfolio',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div_div_div',
+    'field_name' => 'field_portfolio_weight',
+    'label' => 'Portfolio Weight',
+    'required' => 0,
+    'settings' => array(
+      'range' => 20,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'weight',
+      'settings' => array(
+        'range' => 20,
+      ),
+      'type' => 'weight_selector',
       'weight' => 4,
     ),
   );
@@ -130,6 +181,7 @@ function portfolio_content_type_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Description');
   t('Portfolio Gallery');
+  t('Portfolio Weight');
 
   return $field_instances;
 }

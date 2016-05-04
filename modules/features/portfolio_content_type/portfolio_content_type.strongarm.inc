@@ -100,6 +100,9 @@ function portfolio_content_type_strongarm() {
         'xmlsitemap' => array(
           'weight' => '2',
         ),
+        'redirect' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(),
     ),
