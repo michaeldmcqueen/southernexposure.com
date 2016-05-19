@@ -13,9 +13,12 @@ header.site-header {
         background-image: linear-gradient(to top, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.62) 100%);
       width: 100%;
       position: absolute;
-      height: 300px;
+      height: 125px;
       top: 0;
       z-index: -1;
+      @include breakpoint($desktop, $no-query: '.no-mq') {
+        height: 300px;
+      }
     }
 }
 
