@@ -51,6 +51,12 @@
       </aside>
     <?php endif; ?>
 
+    <?php if ($page['frontquote']): ?>
+      <div class="front-quote">
+        <?php print render($page['frontquote']); ?>
+      </div>
+    <?php endif; ?>
+
     <?php if ($page['postscript']): ?>
       <div class="postscript">
         <?php print render($page['postscript']); ?>

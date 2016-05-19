@@ -98,3 +98,9 @@
     // width: auto !important;
   }
 }
+
+.front-quote {
+  padding-bottom: 2em;
+  @include clearfix;
+  clear: both;
+}

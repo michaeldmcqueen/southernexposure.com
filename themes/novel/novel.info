@@ -15,6 +15,7 @@ regions[help] = 'Help'
 regions[sidebar_first] = 'Sidebar First'
 regions[content] = 'Main Region'
 regions[sidebar_second] = 'Sidebar Second'
+regions[frontquote] = 'Front Quote'
 regions[postscript] = 'Postscript'
 regions[footer] = 'Footer'
 

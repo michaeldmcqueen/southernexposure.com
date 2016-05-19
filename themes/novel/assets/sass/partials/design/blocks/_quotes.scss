@@ -1,0 +1,24 @@
+.view-id-quotes {
+  text-align: center;
+  padding: 1em;
+  font-style: italic;
+  &:before {
+    content: '';
+    background: #B7B4A4;
+    position: relative;
+    margin: 0 auto 2em;
+    height: 3px;
+    width: 65px;
+    display: block;
+    border-radius: 3px;
+  }
+  p {
+    font-size: 110%;
+  }
+  .quote-by {
+    color: #B7B4A4;
+    &:before {
+      content: '- ';
+    }
+  }
+}
