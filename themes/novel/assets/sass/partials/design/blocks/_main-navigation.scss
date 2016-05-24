@@ -168,15 +168,12 @@ $bar-spacing: 10px;
 
 .hamburger-menu {
   position: absolute;
-  top: 27px;
-  // left: 0;
-  // right: 0;
-  bottom: 0;
-  //margin: auto;
+  top: 0;
   width: $bar-width;
   height: $bar-height + $bar-spacing*2;
   cursor: pointer;
-  right: 1em;
+  right: 0em;
+  padding: 2em 3em;
 }
 
 .bar,
