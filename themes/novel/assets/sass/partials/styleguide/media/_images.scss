@@ -2,3 +2,4 @@ img {
   max-width: 100%;
   height: auto;
 }
+@media \0screen {img { width: auto }} /* Prevent height distortion in IE8. */
