@@ -31,5 +31,8 @@
 }
 
 main.no-preface {
-  margin-top: 10em !important;
+  margin-top: 3em !important;
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    margin-top: 5em !important;
+  }
 }

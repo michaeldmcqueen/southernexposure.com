@@ -23,6 +23,12 @@ background: linear-gradient(to bottom,  rgba(0,0,0,0.62) 0%,rgba(0,0,0,0) 100%);
     }
 }
 
+.site-header.no-preface {
+  &:before {
+    height: 0;
+    }
+}
+
 
 
 .header-image-is-light {
