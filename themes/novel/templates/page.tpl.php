@@ -69,7 +69,7 @@
 <footer>
     <div class="wrap">
       <?php print render($page['footer']); ?>
-      <div class="col newsletter-signup col-1st">
+      <!-- <div class="col newsletter-signup col-1st">
         <h3>Join Our Newsletter</h3>
         <h6>Sign up to get updates and tips from our team.</h6>
         <form action="/portfolio/overall-landscapes%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" accept-charset="UTF-8" method="post" id="campaignmonitor-general-form">
@@ -90,15 +90,17 @@
 
         </div>
       </form>
-      </div>
+      </div> -->
       
-      <div class="col col-2nd">
+      <div class="col col-1st">
         <h3>Contact Us</h3>
         <p><a href="/contact-us">Email Us</a></p>
         <p>745 Jackson Court<br>
           Windsor, CO. 80550</p>
           <p>Office 970-674-3010<br> 
           Cell 970-566-0435</p>
+          <div class="createsend-button" style="height:27px;display:inline-block;" data-listid="r/25/059/125/FE09B1D4A48D7453">
+</div><script type="text/javascript">(function () { var e = document.createElement('script'); e.type = 'text/javascript'; e.async = true; e.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://btn.createsend1.com/js/sb.min.js?v=3'; e.className = 'createsend-script'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s); })();</script>
       </div>
       <div class="col col-3rd">
         <p>&copy; Copyright 2004 - <?php echo date("Y") ?>.  Southern Exposure Landscape & Sprinkler LLC</p>
