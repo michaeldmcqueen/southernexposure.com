@@ -41,4 +41,5 @@ features[variable][] = node_options_service
 features[variable][] = node_preview_service
 features[variable][] = node_submitted_service
 features[variable][] = pathauto_node_service_pattern
+features[variable][] = xmlsitemap_settings_node_service
 project path = profiles/vs_base/modules/features
