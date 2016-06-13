@@ -32,17 +32,11 @@ function front_context_default_contexts() {
           'region' => 'preface',
           'weight' => '-10',
         ),
-        'views-case_studies-block_1' => array(
+        'views-front_blocks-block_1' => array(
           'module' => 'views',
-          'delta' => 'case_studies-block_1',
+          'delta' => 'front_blocks-block_1',
           'region' => 'content',
-          'weight' => '0',
-        ),
-        'views-services-block' => array(
-          'module' => 'views',
-          'delta' => 'services-block',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
+          'weight' => '1',
         ),
         'views-clients_we_ve_helped-block' => array(
           'module' => 'views',

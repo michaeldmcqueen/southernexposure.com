@@ -45,6 +45,21 @@ function front_image_default_styles() {
     ),
   );
 
+  // Exported image style: front_calls.
+  $styles['front_calls'] = array(
+    'label' => 'Front Calls',
+    'effects' => array(
+      4 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 810,
+          'height' => 370,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   return $styles;
 }
 
@@ -57,6 +72,14 @@ function front_node_info() {
       'name' => t('Clients'),
       'base' => 'node_content',
       'description' => t('Update and Edit the list of clients on the home page'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+    'home_blocks' => array(
+      'name' => t('Home Blocks'),
+      'base' => 'node_content',
+      'description' => t('Edit the Home Page Blocks'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
