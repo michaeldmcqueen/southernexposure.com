@@ -102,5 +102,24 @@ function front_field_default_field_bases() {
     'type' => 'link_field',
   );
 
+  // Exported field_base: 'field_weight_home_blocks'.
+  $field_bases['field_weight_home_blocks'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_weight_home_blocks',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'weight',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'weight',
+  );
+
   return $field_bases;
 }

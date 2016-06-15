@@ -250,6 +250,11 @@ function front_views_default_views() {
 </div>
 ';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content: Weight (field_weight_home_blocks) */
+  $handler->display->display_options['sorts']['field_weight_home_blocks_value']['id'] = 'field_weight_home_blocks_value';
+  $handler->display->display_options['sorts']['field_weight_home_blocks_value']['table'] = 'field_data_field_weight_home_blocks';
+  $handler->display->display_options['sorts']['field_weight_home_blocks_value']['field'] = 'field_weight_home_blocks_value';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
