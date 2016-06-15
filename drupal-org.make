@@ -88,23 +88,6 @@ projects[xmlsitemap][version] = "2.2"
 
 
 ; Libraries
-libraries[ckeditor][type] = "libraries"
-libraries[ckeditor][download][type] = get
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.3.4/ckeditor_4.3.4_full.zip"
-libraries[ckeditor][directory_name] = "ckeditor"
-libraries[ckeditor][destination] = "libraries"
-
-libraries[colorbox][type] = "libraries"
-libraries[colorbox][download][type] = "file"
-libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.5.13.zip"
-libraries[colorbox][directory_name] = "colorbox"
-libraries[colorbox][destination] = "libraries"
-
-libraries[chosen][type] = "libraries"
-libraries[chosen][download][type] = "file"
-libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases/download/v1.5.1/chosen_v1.5.1.zip"
-libraries[chosen][directory_name] = "chosen"
-libraries[chosen][destination] = "libraries"
 
 ; Themes
 projects[shiny][version] = "1.7"
