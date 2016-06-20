@@ -15,8 +15,8 @@ function context_defaults_default_fe_block_boxes() {
   $fe_block_boxes->format = 'ds_code';
   $fe_block_boxes->machine_name = 'affiliations';
   $fe_block_boxes->body = '<div class="affiliations-block">
-<a href="http://www.alcc.com/" target="_blank"><img src="/profiles/vs_base/themes/novel/assets/images/alcc.jpg" /></a>
-<a href="https://www.landcarenetwork.org/index.cfm" target="_blank"><img src="/profiles/vs_base/themes/novel/assets/images/lic.jpg" /></a>
+<a href="http://www.alcc.com/" target="_blank"><img src="/profiles/vs_base/themes/novel/assets/images/ALCC.jpg" /></a>
+<a href="https://www.landcarenetwork.org/index.cfm" target="_blank"><img src="/profiles/vs_base/themes/novel/assets/images/LIC.jpg" /></a>
 </div>';
 
   $export['affiliations'] = $fe_block_boxes;
