@@ -7,9 +7,13 @@
 
 .service-list {
   margin-bottom: 2em;
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
   .view-header {
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   .view-content {
     .views-row {

@@ -119,5 +119,73 @@ function context_defaults_context_default_contexts() {
   t('global');
   $export['global_admin'] = $context;
 
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'global_sidebar';
+  $context->description = '';
+  $context->tag = 'global';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        '~<front>' => '~<front>',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'block-1' => array(
+          'module' => 'block',
+          'delta' => '1',
+          'region' => 'sidebar_second',
+          'weight' => '20',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('global');
+  $export['global_sidebar'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'service_request_sidebar';
+  $context->description = '';
+  $context->tag = 'global';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        '~<front>' => '~<front>',
+        '~contact-us' => '~contact-us',
+        '~request-landscape-maintenance' => '~request-landscape-maintenance',
+        '~request-proposal' => '~request-proposal',
+        '~request-sprinkler-service' => '~request-sprinkler-service',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'block-2' => array(
+          'module' => 'block',
+          'delta' => '2',
+          'region' => 'sidebar_second',
+          'weight' => '-23',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('global');
+  $export['service_request_sidebar'] = $context;
+
   return $export;
 }

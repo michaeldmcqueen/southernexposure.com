@@ -176,6 +176,15 @@ function front_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Text area */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['content'] = '<div class="btn"><a href="/request-landscape-maintenance">Request Landscape Maintenance</a></div>
+<div class="btn"><a href="/request-proposal">Request a Proposal</a></div>
+<div class="btn"><a href="/request-sprinkler-service">Request a Sprinkler Service</a></div>';
+  $handler->display->display_options['footer']['area']['format'] = 'ds_code';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';

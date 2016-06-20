@@ -1,4 +1,4 @@
-.sidebar-second .block-menu-block {
+.sidebar-second .block-menu-block, .sidebar-second #block-block-2 {
   margin-bottom: 2em;
   ul, h2 {
     margin: 0;
@@ -58,3 +58,22 @@
     }
   }
 }
+
+.sidebar-second #block-block-2 {
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+    &:before {
+      background: none;
+    }
+  }
+  ul li {
+    &:before {
+      left: 10px;
+    }
+  }
+  a {
+    padding: .75em 1em .75em 2em;
+  }
+}
+

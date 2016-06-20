@@ -1,22 +1,3 @@
-// .front {
-//   .preface {
-//     height: auto;
-//     img {
-//       width: 100%;
-//     }
-//   }
-//   .flex-caption {
-//     position: absolute;
-//     right: 0;
-//     bottom: 0;
-//     background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%, rgba(0,0,0,0.60) 100%);    
-//     padding: 30% 3em 2em 7em;;
-//     text-align: right;
-//     h6, h3 {
-//       color: #fff;
-//     }
-//   }
-// }
 .front .slick-slide {
   padding: 15px;
   background: #fff;
@@ -131,5 +112,27 @@
   }
   .call-link {
     font-weight: 700;
+  }
+
+  .view-footer {
+    text-align: center;
+    padding: 1em 0 0;
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      padding: 4em 0 0;
+    }
+    .btn {
+      display: inline-block;
+      margin: 0 .5em 1em;
+      a {
+        display: inline-block;
+        @include btn($link, #fff, #3E8144, 3px, 95%);
+        font-family: $heading-font-family;
+        box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.20), inset 0px 1px 0px 0px #FFFFFF;
+        padding: .5em 1em;
+        &:hover {
+          background: darken($color-one,10%);
+        }
+      }
+    }
   }
 }
