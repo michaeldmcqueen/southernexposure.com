@@ -89,8 +89,27 @@
 
 
 .front-calls {
+  .front-block-image {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 1em;
+    h3 {
+      position: absolute;
+      bottom: -1px;
+      margin: 0;
+      padding: .5em 1em;
+      color: #fff;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.75);
+      width: 100%;
+      background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 90%);
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 90%);
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 90%);
+
+    }
+  }
   .views-row {
     margin: 2em 0 4em;
+
     @include breakpoint($tablet, $no-query: '.no-mq') {
       display: inline-block;
       vertical-align: top;

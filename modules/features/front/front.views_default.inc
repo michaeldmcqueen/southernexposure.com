@@ -251,9 +251,11 @@ function front_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_home_block_image]
-<div class="front-block-content">
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="front-block-image">
+[field_home_block_image]
  <h3>[title]</h3>
+</div>
+<div class="front-block-content">
 [field_home_block_text_area]
 <a href="[field_home_blocks_link_1]" class="call-link">[field_home_blocks_link]</a>
 </div>
