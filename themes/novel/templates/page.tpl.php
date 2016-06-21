@@ -72,16 +72,23 @@
       <div class="col col-1st">
         <h3>Contact Us</h3>
         <p><a href="/contact-us">Email Us</a></p>
+        <div class="address">
         <p>745 Jackson Court<br>
           Windsor, CO. 80550</p>
-          <p>Office 970-674-3010<br> 
+        </div>
+          <div class="phone">
+            <p>Office 970-674-3010<br> 
           Cell 970-566-0435</p>
+          </div>
+          
           <div class="social">
           <a href="https://www.facebook.com/pages/Southern-Exposure-Landscape/208239452524582" target="_blank"><img src="/profiles/vs_base/themes/novel/assets/images/icons/facebook.png" alt="Facebook"></a>
           <a href="https://pinterest.com/NoColandscape/" target="_blank"><img src="/profiles/vs_base/themes/novel/assets/images/icons/pin.png" alt="Pinterest"></a></a>
-        </div>
+
           <div class="createsend-button" style="height:27px;display:inline-block;" data-listid="r/25/059/125/FE09B1D4A48D7453">
           </div><script type="text/javascript">(function () { var e = document.createElement('script'); e.type = 'text/javascript'; e.async = true; e.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://btn.createsend1.com/js/sb.min.js?v=3'; e.className = 'createsend-script'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s); })();</script>
+        </div>
+          
         
       </div>
       <div class="col col-3rd">
