@@ -13,6 +13,7 @@ dependencies[] = strongarm
 features[context][] = global
 features[context][] = global_admin
 features[context][] = global_sidebar
+features[context][] = login_tabs
 features[context][] = service_request_sidebar
 features[ctools][] = context:context:3
 features[ctools][] = strongarm:strongarm:1
