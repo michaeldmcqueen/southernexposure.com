@@ -14,7 +14,7 @@ function case_study_content_type_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_case_study';
-  $strongarm->value = 'edit-xmlsitemap';
+  $strongarm->value = 'edit-menu';
   $export['additional_settings__active_tab_case_study'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -103,7 +103,9 @@ function case_study_content_type_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_case_study';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    0 => 'main-menu',
+  );
   $export['menu_options_case_study'] = $strongarm;
 
   $strongarm = new stdClass();
