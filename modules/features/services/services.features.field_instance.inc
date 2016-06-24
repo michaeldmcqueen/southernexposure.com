@@ -71,7 +71,7 @@ function services_field_default_field_instances() {
           'colorbox_image_style' => 'full_width',
           'colorbox_multivalue_index' => NULL,
           'colorbox_node_style' => 'square_thumbnail',
-          'colorbox_node_style_first' => 'full_width',
+          'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',
         'weight' => 2,
@@ -160,14 +160,8 @@ function services_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'teaser' => array(

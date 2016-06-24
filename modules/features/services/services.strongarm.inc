@@ -40,6 +40,15 @@ function services_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'contact_form' => array(
+        'custom_settings' => FALSE,
+      ),
+      'hide' => array(
+        'custom_settings' => FALSE,
+      ),
+      'home' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

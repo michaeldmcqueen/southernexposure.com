@@ -13,11 +13,6 @@
       @include breakpoint($lg-desktop) {
         width: 20%;
       }
-      &:first-child {
-        padding: 0 0 1em;
-        display: block;
-        width: 100%;
-      }
     }
     img {
       @include img-border;
