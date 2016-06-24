@@ -26,18 +26,7 @@ function portfolio_displays_and_views_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'views-portfolio-block' => array(
-          'module' => 'views',
-          'delta' => 'portfolio-block',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 0;
 
   // Translatables

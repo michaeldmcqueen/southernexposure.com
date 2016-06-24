@@ -8,6 +8,7 @@
   }
   h2 {
     position: relative;
+    font-size: 1.1em;
     &:before {
       content: '';
       display: inline-block;
@@ -17,7 +18,7 @@
       margin-right: 1em;
       position: absolute;
       left: 10px;
-      top: 18px;
+      top: 23px;
     }
   }
   ul li {
