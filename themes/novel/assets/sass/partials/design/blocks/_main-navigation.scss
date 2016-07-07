@@ -91,7 +91,7 @@ nav {
       display: inline-block;
     }
   }
-  a, a:visited {
+  a, a:visited, .nolink {
     color: #fff;
     text-decoration: none;
     &.active {
@@ -157,7 +157,7 @@ nav {
 }
 
 .header-image-is-light {
-  nav ul.menu a, nav ul.menu a:visited  {
+  nav ul.menu a, nav ul.menu a:visited, nav ul.menu .nolink  {
     color: #000000;
   }
 }

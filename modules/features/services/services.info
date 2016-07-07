@@ -26,6 +26,7 @@ features[field_group][] = group_content|node|service|form
 features[field_instance][] = node-service-body
 features[field_instance][] = node-service-field_service_gallery
 features[field_instance][] = node-service-field_service_weight
+features[image][] = larger_square_thumbnail
 features[node][] = service
 features[user_permission][] = create service content
 features[user_permission][] = delete any service content

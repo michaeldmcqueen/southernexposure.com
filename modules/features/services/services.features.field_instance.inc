@@ -70,7 +70,7 @@ function services_field_default_field_instances() {
           'colorbox_gallery_custom' => '',
           'colorbox_image_style' => 'full_width',
           'colorbox_multivalue_index' => NULL,
-          'colorbox_node_style' => 'square_thumbnail',
+          'colorbox_node_style' => 'larger_square_thumbnail',
           'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',

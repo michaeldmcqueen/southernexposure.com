@@ -5,6 +5,14 @@
 }
  
 
+.node-service.view-mode-full {
+  .gallery {
+    a.colorbox {
+      width: 33%;
+    }
+  }
+}
+
 .sidebar-second #block-views-services-block{
   h2 {
     font-size: 1.5em;

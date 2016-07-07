@@ -17,6 +17,30 @@ function services_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function services_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: larger_square_thumbnail.
+  $styles['larger_square_thumbnail'] = array(
+    'label' => 'Larger Square Thumbnail',
+    'effects' => array(
+      5 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 300,
+          'height' => 300,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function services_node_info() {
