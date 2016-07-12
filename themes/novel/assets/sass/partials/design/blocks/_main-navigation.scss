@@ -1,4 +1,4 @@
-nav {
+nav.main-nav {
   font-family: $heading-font-family;
   padding: 0em 0em 0; 
   font-size: 110%;
@@ -14,6 +14,9 @@ nav {
   @include breakpoint($lg-desktop, $no-query: '.no-mq') {
     font-size: 100%;  
     margin-top: 35px;
+  }
+  .contextual-links-region {
+    position: static;
   }
   ul.menu {
     margin: 1em 0 0;
@@ -64,6 +67,12 @@ nav {
               }
             }
           }
+        }
+      }
+      li.last:hover {
+        ul {
+          left: auto;
+          right: 0;
         }
       }
     }

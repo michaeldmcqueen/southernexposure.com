@@ -7,11 +7,13 @@
     background-size: 100%;
     @include breakpoint($tablet, $no-query: '.no-mq') {
       background: url('../images/logos/logo-light-med.svg') no-repeat;
+      background-size: 100%;
       width: 353px;
       height: 60px;
     }
     @include breakpoint($lg-desktop) {
       background: url('../images/logos/logo-light-med.svg') no-repeat;
+      background-size: 100%;
       width: 393px;
       height: 72px;
     }
@@ -34,11 +36,13 @@
       height: 47px;
       @include breakpoint($tablet, $no-query: '.no-mq') {
         background: url('../images/logos/logo-dark-med.svg') no-repeat;
+        background-size: 100%;
         width: 353px;
       height: 60px;
       }
       @include breakpoint($lg-desktop) {
         background: url('../images/logos/logo-dark-med.svg') no-repeat;
+        background-size: 100%;
         width: 393px;
         height: 72px;
       }
