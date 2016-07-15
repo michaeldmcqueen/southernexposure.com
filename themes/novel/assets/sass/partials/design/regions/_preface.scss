@@ -18,7 +18,7 @@
     bottom: 0;
     z-index: -1;
     @include breakpoint($tablet, $no-query: '.no-mq') {
-      height: 280px;
+      height: 120px;
     }
   }
 }

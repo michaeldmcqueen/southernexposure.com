@@ -37,9 +37,10 @@ nav.main-nav {
         padding: 0em 0 !important;
         margin: 0;
         visibility: hidden;
-        transition:all .5s ease;
-        -webkit-transition:all .5s ease;
-        width: 200px;
+        background-color: #fff;
+        transition: top .5s, opacity .5s;
+        -webkit-transition:top .5s, opacity .5s;
+        width: 250px;
         box-shadow: 1px 1px 4px rgba(0,0,0,.51);
         a.active-trail {
           color: $heading-color;
@@ -53,13 +54,15 @@ nav.main-nav {
       }
       li:hover {
         ul {
+
           z-index: 99;
-          background-color: #fff;
           top:110%;
           left: 0;
           opacity: 1;
           visibility: visible;
           color: $heading-color;
+          transition: top .5s, opacity .5s;
+          -webkit-transition:top .5s, opacity .5s;
           li {
             display: block;
             &:hover {
