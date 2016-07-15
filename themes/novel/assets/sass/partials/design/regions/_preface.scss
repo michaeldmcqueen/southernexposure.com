@@ -14,11 +14,11 @@
     background-image: linear-gradient(to top, #000 0%,rgba(0, 0, 0, 0) 100%);
     width: 100%;
     position: absolute;
-    height: 20px;
+    height: 100px;
     bottom: 0;
     z-index: -1;
     @include breakpoint($tablet, $no-query: '.no-mq') {
-      height: 120px;
+      height: 100px;
     }
   }
 }
