@@ -38,8 +38,8 @@ nav.main-nav {
         margin: 0;
         visibility: hidden;
         background-color: #fff;
-        transition: top .5s, opacity .5s;
-        -webkit-transition:top .5s, opacity .5s;
+        transition: top .75s, opacity .75s, visibility .75s;
+        -webkit-transition:top .75s, opacity .75s, visibility .75s;
         width: 250px;
         box-shadow: 1px 1px 4px rgba(0,0,0,.51);
         a.active-trail {
@@ -61,8 +61,8 @@ nav.main-nav {
           opacity: 1;
           visibility: visible;
           color: $heading-color;
-          transition: top .5s, opacity .5s;
-          -webkit-transition:top .5s, opacity .5s;
+          transition: top .5s, opacity .5s, visibility .75s;
+          -webkit-transition:top .5s, opacity .5s, visibility .75s;
           li {
             display: block;
             &:hover {
