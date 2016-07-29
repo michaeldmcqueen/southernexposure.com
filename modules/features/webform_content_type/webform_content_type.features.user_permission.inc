@@ -26,6 +26,7 @@ function webform_content_type_user_default_permissions() {
     'name' => 'access own webform results',
     'roles' => array(
       'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'webform',
   );
@@ -35,6 +36,7 @@ function webform_content_type_user_default_permissions() {
     'name' => 'access own webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'webform',
   );
@@ -55,6 +57,7 @@ function webform_content_type_user_default_permissions() {
     'name' => 'delete all webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'webform',
   );
@@ -86,6 +89,7 @@ function webform_content_type_user_default_permissions() {
     'name' => 'delete own webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'webform',
   );
@@ -95,6 +99,7 @@ function webform_content_type_user_default_permissions() {
     'name' => 'edit all webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'webform',
   );
@@ -126,6 +131,7 @@ function webform_content_type_user_default_permissions() {
     'name' => 'edit own webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'webform',
   );
@@ -135,6 +141,7 @@ function webform_content_type_user_default_permissions() {
     'name' => 'edit webform components',
     'roles' => array(
       'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'webform',
   );

@@ -78,7 +78,7 @@
         </div>
           <div class="phone">
             <p>Office 970-674-3010<br> 
-          Cell 970-566-0435</p>
+          Fax 970-674-1993</p>
           </div>
           
           <div class="social">
